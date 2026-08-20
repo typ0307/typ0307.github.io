@@ -1,76 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>typ0307 Gateway</title>
-    <style>
-        body { font-family: 'Pretendard', -apple-system, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 2rem; display: flex; justify-content: center; align-items: center; min-height: 100vh;}
-        .container { max-width: 900px; width: 100%; }
-        h1 { text-align: center; color: #2c3e50; margin-bottom: 2rem; font-size: 2rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-        .card { background: #fff; padding: 1.5rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: transform 0.2s, box-shadow 0.2s; text-align: center; border: 1px solid #eee; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-        .card h3 { margin: 0 0 1.2rem 0; font-size: 1.3rem; color: #34495e; font-weight: 700; }
-        .btn-group { display: flex; justify-content: center; gap: 10px; }
-        .btn { display: inline-block; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; flex: 1;}
-        .btn-page { background-color: #74b9ff; color: #fff; }
-        .btn-page:hover { background-color: #0984e3; }
-        .btn-repo { background-color: #dfe6e9; color: #2d3436; }
-        .btn-repo:hover { background-color: #b2bec3; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🚀 typ0307 Repository Gateway</h1>
-        <div class="grid">
-
-            <!-- 1. morning-brief -->
-            <div class="card">
-                <h3>morning-brief</h3>
-                <div class="btn-group">
-                    <a href="https://morning-brief-aespa.vercel.app" class="btn btn-page" target="_blank">🌐 App</a>
-                    <a href="https://github.com/typ0307/morning-brief" class="btn btn-repo" target="_blank">💻 GitHub</a>
-                </div>
-            </div>
-
-            <!-- 2. sns-downloader -->
-            <div class="card">
-                <h3>sns-downloader</h3>
-                <div class="btn-group">
-                    <a href="https://sns-downloader.streamlit.app" class="btn btn-page" target="_blank">🌐 App</a>
-                    <a href="https://github.com/typ0307/sns-downloader" class="btn btn-repo" target="_blank">💻 GitHub</a>
-                </div>
-            </div>
-
-            <!-- 3. weverse-viewer -->
-            <div class="card">
-                <h3>weverse-viewer</h3>
-                <div class="btn-group">
-                    <a href="https://weverse-viewer-aespa.streamlit.app" class="btn btn-page" target="_blank">🌐 App</a>
-                    <a href="https://github.com/typ0307/weverse-viewer" class="btn btn-repo" target="_blank">💻 GitHub</a>
-                </div>
-            </div>
-
-            <!-- 4. poca-master -->
-            <div class="card">
-                <h3>poca-master</h3>
-                <div class="btn-group">
-                    <a href="https://poca-master.vercel.app" class="btn btn-page" target="_blank">🌐 App</a>
-                    <a href="https://github.com/typ0307/poca-master" class="btn btn-repo" target="_blank">💻 GitHub</a>
-                </div>
-            </div>
-
-            <!-- 5. poca-viewer -->
-            <div class="card">
-                <h3>poca-viewer</h3>
-                <div class="btn-group">
-                    <a href="https://poca-viewer-aespa.streamlit.app" class="btn btn-page" target="_blank">🌐 App</a>
-                    <a href="https://github.com/typ0307/poca-viewer" class="btn btn-repo" target="_blank">💻 GitHub</a>
-                </div>
-            </div>
-    
-        </div>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b16" />
+    <meta
+      name="description"
+      content="typ0307의 에스파풍 디지털 프로젝트 포털"
+    />
+    <title>typ0307 // Digital Gateway</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
