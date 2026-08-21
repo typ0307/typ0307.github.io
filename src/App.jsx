@@ -128,9 +128,9 @@ export default function App() {
       <div className="ambient ambient-two" />
 
       <header className="site-header">
-        <a className="brand" href="/" aria-label="typ0307 홈으로 이동">
+        <a className="brand" href="/" aria-label="KWANGYA PORTAL 홈으로 이동">
           <span className="brand-mark">T</span>
-          <span>typ0307</span>
+          <span>KWANGYA PORTAL</span>
           <span className="brand-divider">//</span>
           <span className="brand-muted">GATEWAY</span>
         </a>
@@ -149,7 +149,7 @@ export default function App() {
               <span>next portal.</span>
             </h1>
             <p className="hero-description">
-              typ0307이 만든 작은 도구와 실험을 한 곳에 모았습니다.
+              KWANGYA PORTAL이 만든 작은 도구와 실험을 한 곳에 모았습니다.
               <br className="desktop-only" />
               필요한 프로젝트를 선택해 바로 접속해 보세요.
             </p>
@@ -213,7 +213,7 @@ export default function App() {
       </main>
 
       <footer className="site-footer">
-        <span>© 2026 typ0307</span>
+        <span>© 2026 KWANGYA PORTAL</span>
         <span className="footer-line" />
         <span>MADE WITH CURIOSITY <span className="footer-heart">✦</span></span>
       </footer>

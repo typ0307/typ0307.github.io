@@ -1,6 +1,6 @@
-# typ0307 // Digital Gateway
+# KWANGYA PORTAL
 
-typ0307의 개인 프로젝트와 에스파에서 영감을 받은 디지털 도구를 한 곳에 모은 포털입니다.
+KWANGYA PORTAL의 개인 프로젝트와 에스파에서 영감을 받은 디지털 도구를 한 곳에 모은 포털입니다.
 
 React + Vite로 구성되어 있으며, `main` 브랜치에 변경 사항이 올라오면 GitHub Actions가 자동으로 빌드하고 GitHub Pages에 배포합니다.
 
