@@ -131,8 +131,6 @@ export default function App() {
         <a className="brand" href="/" aria-label="KWANGYA PORTAL 홈으로 이동">
           <span className="brand-mark">T</span>
           <span>KWANGYA PORTAL</span>
-          <span className="brand-divider">//</span>
-          <span className="brand-muted">GATEWAY</span>
         </a>
         <div className="system-status" aria-label="시스템 상태 정상">
           <span className="status-dot" />
