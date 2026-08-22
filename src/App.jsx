@@ -106,6 +106,21 @@ const bannerLinks = [
     sub: "GraphQL/Hasura Backend · Postgres · Auth · Storage · GraphQL API",
     href: "https://nhost.io/",
   },
+  {
+    label: "DEEPSEEK",
+    sub: "Open Source LLM · R1 Reasoning · Code · Chat · API Compatible",
+    href: "https://deepseek.com",
+  },
+  {
+    label: "OPENROUTER",
+    sub: "Unified LLM Gateway · 100+ Models · Cheapest Routing · Fallbacks",
+    href: "https://openrouter.ai",
+  },
+  {
+    label: "CHEAPER INFERENCE",
+    sub: "Compare LLM Prices · 50+ Providers · Real-time · Free Tier",
+    href: "https://cheaperinference.com",
+  },
 ];
 
 function Sparkles({ count = 5, className = "kv-sparkles" }) {
@@ -150,6 +165,66 @@ function Starfield() {
           }}
         />
       ))}
+    </div>
+  );
+}
+
+function BannerSlider({ items }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const totalItems = items.length;
+  const itemsPerView = 4;
+  const maxIndex = Math.max(0, totalItems - itemsPerView);
+
+  useEffect(() => {
+    if (isHovering || totalItems <= itemsPerView) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [isHovering, totalItems, maxIndex]);
+
+  const goPrev = () => setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  const goNext = () => setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+  const goTo = (index) => setCurrentIndex(index);
+
+  const visibleItems = items.slice(currentIndex, currentIndex + itemsPerView);
+
+  return (
+    <div className="banner-slider" onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
+      <div className="slider-track" role="list" aria-label="관련 링크 슬라이더">
+        {visibleItems.map((item) => (
+          <a
+            key={item.href + item.label}
+            className="banner-card"
+            href={item.href}
+            target="_blank"
+            rel="noreferrer"
+            role="listitem"
+          >
+            <span className="banner-label">{item.label}</span>
+            <span className="banner-sub">{item.sub}</span>
+          </a>
+        ))}
+      </div>
+      {totalItems > itemsPerView && (
+        <div className="slider-controls" aria-label="슬라이더 네비게이션">
+          <button className="slider-btn prev" onClick={goPrev} aria-label="이전">‹</button>
+          <div className="slider-dots" aria-label="슬라이드 선택">
+            {Array.from({ length: maxIndex + 1 }, (_, i) => (
+              <button
+                key={i}
+                className={i === currentIndex ? "active" : ""}
+                onClick={() => goTo(i)}
+                aria-label={`슬라이드 ${i + 1}로 이동`}
+                aria-current={i === currentIndex ? "true" : "false"}
+              />
+            ))}
+          </div>
+          <button className="slider-btn next" onClick={goNext} aria-label="다음">›</button>
+        </div>
+      )}
     </div>
   );
 }
@@ -319,22 +394,9 @@ export default function App() {
             </div>
           </section>
 
-          {/* 링크 배너 */}
+          {/* 링크 배너 — 슬라이더 */}
           <section className="banner-section" id="links" aria-label="관련 링크">
-            <div className="banner-grid">
-              {bannerLinks.map((banner) => (
-                <a
-                  className="banner-card"
-                  key={banner.href + banner.label}
-                  href={banner.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="banner-label">{banner.label}</span>
-                  <span className="banner-sub">{banner.sub}</span>
-                </a>
-              ))}
-            </div>
+            <BannerSlider items={bannerLinks} />
           </section>
         </main>
 

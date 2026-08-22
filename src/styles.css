@@ -547,7 +547,7 @@ li {
   font-size: 13px;
 }
 
-/* ---------- 링크 배너 ---------- */
+/* ---------- 링크 배너 (슬라이더) ---------- */
 
 .banner-section {
   width: 92%;
@@ -555,10 +555,21 @@ li {
   padding-bottom: 55px;
 }
 
-.banner-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.banner-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
   gap: 14px;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.slider-track > * {
+  flex: 0 0 calc((100% - 42px) / 4);
+  min-width: 0;
 }
 
 .banner-card {
@@ -606,6 +617,78 @@ li {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* 슬라이더 컨트롤 */
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(193, 131, 255, 0.55);
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--cyan);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.slider-btn:hover {
+  border-color: var(--cyan);
+  background: rgba(126, 218, 229, 0.15);
+  color: #fff;
+}
+
+.slider-btn:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dots button {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(193, 131, 255, 0.35);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.slider-dots button:hover {
+  background: var(--cyan);
+}
+
+.slider-dots button.active {
+  background: var(--cyan);
+  transform: scale(1.25);
+}
+
+.slider-dots button:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+/* 반응형: 모바일에서 2개씩 보기 */
+@media (max-width: 768px) {
+  .slider-track > * {
+    flex: 0 0 calc((100% - 14px) / 2);
+  }
 }
 
 /* ---------- 푸터 ---------- */
