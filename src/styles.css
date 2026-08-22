@@ -568,7 +568,7 @@ li {
   flex-direction: column;
   justify-content: center;
   gap: 6px;
-  min-height: 84px;
+  min-height: 100px;
   padding: 14px 18px;
   border: 1px solid rgba(193, 131, 255, 0.55);
   background: linear-gradient(145deg, rgba(0, 0, 0, 0.6), rgba(85, 60, 96, 0.5));
@@ -598,12 +598,14 @@ li {
 }
 
 .banner-sub {
-  font-size: 11px;
-  letter-spacing: 0.08em;
+  font-size: 10px;
+  letter-spacing: 0.06em;
   color: var(--cyan);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /* ---------- 푸터 ---------- */
