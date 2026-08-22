@@ -61,6 +61,16 @@ const projects = [
     repoUrl: "https://github.com/typ0307/babplus-viewer",
     accent: "violet",
   },
+  {
+    name: "book-of-answers",
+    label: "Book of Answers",
+    category: "VERCEL",
+    index: "07",
+    description: "당신의 질문에 답을 찾아주는 마법의 책",
+    appUrl: "https://book-of-answers-aespa.vercel.app",
+    repoUrl: "https://github.com/typ0307/book-of-answers",
+    accent: "pink",
+  },
 ];
 
 const filters = ["ALL", "STREAMLIT", "VERCEL"];
@@ -86,6 +96,11 @@ const bannerLinks = [
     label: "NHOST",
     sub: "BACKEND · nhost.io",
     href: "https://nhost.io/",
+  },
+  {
+    label: "BOOK OF ANSWERS",
+    sub: "VERCEL APP",
+    href: "https://book-of-answers-aespa.vercel.app",
   },
 ];
 
