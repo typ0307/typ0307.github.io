@@ -82,6 +82,11 @@ const bannerLinks = [
     sub: "DATABASE · supabase.com",
     href: "https://supabase.com/",
   },
+  {
+    label: "NHOST",
+    sub: "BACKEND · nhost.io",
+    href: "https://nhost.io/",
+  },
 ];
 
 function Sparkles({ count = 5, className = "kv-sparkles" }) {
