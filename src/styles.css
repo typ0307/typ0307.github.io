@@ -522,6 +522,10 @@ li {
   --accent: #cbfb8e;
 }
 
+.accent-amber {
+  --accent: #ffb86b;
+}
+
 /* ---------- 빈 상태 ---------- */
 
 .empty-state {

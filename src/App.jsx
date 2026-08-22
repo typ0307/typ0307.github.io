@@ -71,6 +71,16 @@ const projects = [
     repoUrl: "https://github.com/typ0307/book-of-answers",
     accent: "pink",
   },
+  {
+    name: "loves-book-of-answers",
+    label: "Loves Book of Answers",
+    category: "VERCEL",
+    index: "08",
+    description: "사랑에 관한 답을 찾아주는 마법의 책",
+    appUrl: "https://lovebookofaespa.vercel.app/",
+    repoUrl: "https://github.com/typ0307/loves-book-of-answers",
+    accent: "amber",
+  },
 ];
 
 const filters = ["ALL", "STREAMLIT", "VERCEL"];
@@ -98,9 +108,9 @@ const bannerLinks = [
     href: "https://nhost.io/",
   },
   {
-    label: "BOOK OF ANSWERS",
+    label: "LOVES BOOK",
     sub: "VERCEL APP",
-    href: "https://bookofaespa.vercel.app/",
+    href: "https://lovebookofaespa.vercel.app/",
   },
 ];
 
@@ -127,7 +137,7 @@ function Starfield() {
         duration: 1.4 + Math.random() * 2.2,
         opacity: 0.2 + Math.random() * 0.7,
       })),
-    []
+    [],
   );
 
   return (
