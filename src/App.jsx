@@ -7,7 +7,7 @@ const projects = [
     category: "VERCEL",
     index: "01",
     description: "하루를 시작하는 뉴스와 인사이트 브리핑",
-    appUrl: "https://morning-brief-aespa.vercel.app",
+    appUrl: "https://morningaespa.vercel.app/",
     repoUrl: "https://github.com/typ0307/morning-brief",
     accent: "cyan",
   },
@@ -37,7 +37,7 @@ const projects = [
     category: "VERCEL",
     index: "04",
     description: "포토카드 컬렉션을 정리하고 관리하는 공간",
-    appUrl: "https://poca-master.vercel.app",
+    appUrl: "https://pocamaster.vercel.app/",
     repoUrl: "https://github.com/typ0307/poca-master",
     accent: "lime",
   },
@@ -54,10 +54,10 @@ const projects = [
   {
     name: "babplus-viewer",
     label: "Babplus Viewer",
-    category: "STREAMLIT",
+    category: "VERCEL",
     index: "06",
     description: "Babplus 콘텐츠를 모아 보는 프로젝트 뷰어",
-    appUrl: "https://babplus-viewer.streamlit.app/",
+    appUrl: "https://babplusviewer.vercel.app/",
     repoUrl: "https://github.com/typ0307/babplus-viewer",
     accent: "violet",
   },
@@ -67,7 +67,7 @@ const projects = [
     category: "VERCEL",
     index: "07",
     description: "당신의 질문에 답을 찾아주는 마법의 책",
-    appUrl: "https://book-of-answers-aespa.vercel.app",
+    appUrl: "https://bookofaespa.vercel.app/",
     repoUrl: "https://github.com/typ0307/book-of-answers",
     accent: "pink",
   },
@@ -100,7 +100,7 @@ const bannerLinks = [
   {
     label: "BOOK OF ANSWERS",
     sub: "VERCEL APP",
-    href: "https://book-of-answers-aespa.vercel.app",
+    href: "https://bookofaespa.vercel.app/",
   },
 ];
 
