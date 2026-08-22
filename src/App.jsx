@@ -88,22 +88,22 @@ const filters = ["ALL", "STREAMLIT", "VERCEL"];
 const bannerLinks = [
   {
     label: "VERCEL",
-    sub: "DEPLOY · vercel.com",
+    sub: "Edge Network · Preview Deployments · Next.js · Serverless Functions",
     href: "https://vercel.com",
   },
   {
     label: "STREAMLIT",
-    sub: "DATA APPS · streamlit.io",
+    sub: "Python Data Apps · ML Prototyping · Interactive Widgets · Rapid Dev",
     href: "https://share.streamlit.io",
   },
   {
     label: "SUPABASE",
-    sub: "DATABASE · supabase.com",
+    sub: "Open Source Firebase Alt · Postgres · Auth · Realtime · Storage",
     href: "https://supabase.com/",
   },
   {
     label: "NHOST",
-    sub: "BACKEND · nhost.io",
+    sub: "GraphQL/Hasura Backend · Postgres · Auth · Storage · GraphQL API",
     href: "https://nhost.io/",
   },
 ];
