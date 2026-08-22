@@ -69,7 +69,7 @@ const projects = [
     description: "당신의 질문에 답을 찾아주는 마법의 책",
     appUrl: "https://bookofaespa.vercel.app/",
     repoUrl: "https://github.com/typ0307/book-of-answers",
-    accent: "pink",
+    accent: "gold",
   },
   {
     name: "loves-book-of-answers",
@@ -79,13 +79,12 @@ const projects = [
     description: "사랑에 관한 답을 찾아주는 마법의 책",
     appUrl: "https://lovebookofaespa.vercel.app/",
     repoUrl: "https://github.com/typ0307/loves-book-of-answers",
-    accent: "amber",
+    accent: "wine",
   },
 ];
 
 const filters = ["ALL", "STREAMLIT", "VERCEL"];
 
-// 하단 LINKS 배너 — 새 링크는 여기에 객체만 추가하면 됩니다.
 const bannerLinks = [
   {
     label: "VERCEL",
@@ -106,11 +105,6 @@ const bannerLinks = [
     label: "NHOST",
     sub: "BACKEND · nhost.io",
     href: "https://nhost.io/",
-  },
-  {
-    label: "LOVES BOOK",
-    sub: "VERCEL APP",
-    href: "https://lovebookofaespa.vercel.app/",
   },
 ];
 
