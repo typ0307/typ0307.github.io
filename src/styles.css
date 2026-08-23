@@ -523,6 +523,10 @@ li {
   --accent: #cbfb8e;
 }
 
+.accent-gold {
+  --accent: #ffd700;
+}
+
 .accent-amber {
   --accent: #ffb86b;
 }
