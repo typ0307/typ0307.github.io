@@ -23,6 +23,7 @@
   --frame: #c183ff;
   --deep: #553c60;
   --upper: #8c689c;
+  --orange: #ff9f43;
 }
 
 * {
@@ -524,6 +525,10 @@ li {
 
 .accent-amber {
   --accent: #ffb86b;
+}
+
+.accent-orange {
+  --accent: var(--orange);
 }
 
 /* ---------- 빈 상태 ---------- */

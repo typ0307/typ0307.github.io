@@ -81,6 +81,17 @@ const projects = [
     repoUrl: "https://github.com/typ0307/loves-book-of-answers",
     accent: "wine",
   },
+  {
+    name: "jutaek-bokgwon",
+    label: "Jutaek Bokgwon",
+    category: "VERCEL",
+    index: "09",
+    description:
+      "1980년대 한국의 '주택복권' 추첨 방송 감성을 담은 레트로 로또 번호 생성기",
+    appUrl: "https://jutaekbokgwon.vercel.app/",
+    repoUrl: "https://github.com/typ0307/jutaek-bokgwon",
+    accent: "orange",
+  },
 ];
 
 const filters = ["ALL", "STREAMLIT", "VERCEL"];
@@ -185,14 +196,20 @@ function BannerSlider({ items }) {
     return () => clearInterval(interval);
   }, [isHovering, totalItems, maxIndex]);
 
-  const goPrev = () => setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
-  const goNext = () => setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+  const goPrev = () =>
+    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  const goNext = () =>
+    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
   const goTo = (index) => setCurrentIndex(index);
 
   const visibleItems = items.slice(currentIndex, currentIndex + itemsPerView);
 
   return (
-    <div className="banner-slider" onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
+    <div
+      className="banner-slider"
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
       <div className="slider-track" role="list" aria-label="관련 링크 슬라이더">
         {visibleItems.map((item) => (
           <a
@@ -210,7 +227,13 @@ function BannerSlider({ items }) {
       </div>
       {totalItems > itemsPerView && (
         <div className="slider-controls" aria-label="슬라이더 네비게이션">
-          <button className="slider-btn prev" onClick={goPrev} aria-label="이전">‹</button>
+          <button
+            className="slider-btn prev"
+            onClick={goPrev}
+            aria-label="이전"
+          >
+            ‹
+          </button>
           <div className="slider-dots" aria-label="슬라이드 선택">
             {Array.from({ length: maxIndex + 1 }, (_, i) => (
               <button
@@ -222,7 +245,13 @@ function BannerSlider({ items }) {
               />
             ))}
           </div>
-          <button className="slider-btn next" onClick={goNext} aria-label="다음">›</button>
+          <button
+            className="slider-btn next"
+            onClick={goNext}
+            aria-label="다음"
+          >
+            ›
+          </button>
         </div>
       )}
     </div>
