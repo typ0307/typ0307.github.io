@@ -531,6 +531,10 @@ li {
   --accent: var(--orange);
 }
 
+.accent-red {
+  --accent: #ff4757;
+}
+
 /* ---------- 빈 상태 ---------- */
 
 .empty-state {

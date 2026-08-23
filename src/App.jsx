@@ -92,6 +92,16 @@ const projects = [
     repoUrl: "https://github.com/typ0307/jutaek-bokgwon",
     accent: "orange",
   },
+  {
+    name: "youtube-downloader",
+    label: "YouTube Downloader",
+    category: "STREAMLIT",
+    index: "10",
+    description: "유튜브 영상과 오디오를 간편하게 다운로드하는 도구",
+    appUrl: "https://youtube-downloader-aespa.streamlit.app/",
+    repoUrl: "https://github.com/typ0307/youtube-downloader",
+    accent: "red",
+  },
 ];
 
 const filters = ["ALL", "STREAMLIT", "VERCEL"];
